@@ -1,0 +1,19 @@
+//variables
+$color_codigo_span: #006400;
+$color_negro: #000000;
+*,
+::after,
+::before{
+  box-sizing: border-box;
+}
+main{
+  margin-top: 5em;
+}
+.tituloSpan{
+  font-size: 1.2em;
+  color: $color_negro;
+  font-weight: bold;
+}
+span{
+  color: $color_codigo_span;
+}

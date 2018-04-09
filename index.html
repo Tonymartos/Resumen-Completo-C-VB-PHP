@@ -1,44 +1,342 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>C#, VB, PHP</title>
-    <link rel="stylesheet" href="css/style.css">
+    <!-- bootstrap -->
     <link rel="stylesheet" href="recursos/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="recursos/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="recursos/bootstrap/js/bootstrap.js">
-    <link rel="stylesheet" href="recursos/font-awesome.css">
-    <link rel="stylesheet" href="recursos/font-awesome.min.css">
+    <!-- end bootstrap -->
+    <!-- icon -->
+    <link rel="stylesheet" href="recursos/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css">
+    <!-- end icon -->
+    <!-- jquery -->
+    <link rel="stylesheet" href="recursos/jquery-ui-1.12.1/jquery-ui.css">
+    <!-- end jquery -->
 
+    <script src="recursos/jquery/jquery-3.2.1.js"></script>
+    <script src="recursos/jquery-ui-1.12.1/jquery-ui.js"></script>
+    <script src="recursos/bootstrap/js/bootstrap.js"></script>
+    <script src="recursos/rainbow-custom.min.js"></script>
+    <script src="recursos/rainbow.linenumbers.js-master/rainbow.linenumbers.min.js"></script>
+    <link rel="stylesheet" href="recursos/rainbow.linenumbers.js-master/tomorrow-night.css">
+    <link rel="stylesheet" href="recursos/rainbow.linenumbers.js-master/theme.css">
+    <!-- normalize -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- end normalize -->
+    <!-- my css -->
+    <link rel="stylesheet" href="css/estilo.css">
+    <!-- end my css -->
+
+    <title>NetDawEs</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <h1>C#, VB, PHP</h1>
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">NetDawEs</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <!--<li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>-->
+            </ul>
+            <form class="form-inline mt-2 mt-md-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
         </div>
-        <div class="menu">
-            <nav>
-                <a href="http://">C#</a>
-                <a href="http://">VB</a>
-                <a href="http://">PHP</a>
+    </nav>
+</header>
+<main role="main" class="container">
+    <div class="row">
+        <div class="col-md-8 blog-main">
+
+            <div class="blog-post">
+                <h2 class="blog-post-title">Declaración de variables Visual Basic, C# y PHP</h2>
+                <p class="blog-post-meta">Abril 9, 2018 by <a target="_blank" href="https://github.com/juancarlosvim">JuanCarlosVim</a></p>
+
+                <p>Explicaremos cómo se debe poner las variables</p>
+                <hr>
+                <h2>Visual Basic (VB)</h2>
+                <p> Un nombre de elemento en Visual Basic debe observar las reglas siguientes:</p>
+                <ul>
+                    <li>Debe comenzar por un carácter alfabético o un signo de subrayado (_).</li>
+                    <li>Sólo puede contener caracteres alfabéticos, dígitos decimales y signos de subrayado.</li>
+                    <li>Debe contener por lo menos un carácter alfabético o un dígito decimal, si empieza con un signo de subrayado.</li>
+                    <li>No puede superar los 1023 caracteres de longitud.</li>
+
+                </ul>
+                <p>El límite de longitud de 1023 caracteres también se aplica a la cadena completa de un nombre completo, como <span>outerNamespace.middleNamespace.innerNamespace.thisClass.thisElement.</span></p>
+                <p>El ejemplo siguiente muestra algunos nombres de elementos válidos.</p>
+                <p><span>aB123__45</span></p>
+                <p><span>_567</span></p>
+                <p> El ejemplo siguiente muestra algunos nombres de elementos no válidos. El primero contiene sólo un subrayado, el segundo comienza con un dígito decimal y el tercero contiene un carácter no válido ($). </p>
+                <p><span>' Three INVALID element names</span></p>
+                <p><span>_</span></p>
+                <p><span>12ABC</span></p>
+                <p><span>xyz$wv</span></p>
+                <p><span class="tituloSpan">Directrices sobre longitud de nombres</span></p>
+                <p> A efectos prácticos, su nombre debe ser tan corto como sea posible aunque tiene que identificar claramente la naturaleza del elemento. Esto mejora la legibilidad de su código y reduce la longitud de línea y el tamaño del archivo de origen. </p>
+                <p><span class="tituloSpan">Nombres con escape</span></p>
+                <p> En general, el nombre de un elemento no puede coincidir con ninguna de las palabras clave reservadas para Visual Basic, como Case o Friend. No obstante, puede definir un nombre con escape que se especifica incluido entre corchetes ([ ]). Un nombre con escape puede coincidir con cualquier palabra clave de Visual Basic, puesto que los corchetes quitan toda ambigüedad posible. También puede usar los corchetes en las referencias al nombre en el código.</p>
+                <p> En general, sólo debe utilizar los nombres con escape cuando: </p>
+                <ul>
+                    <li>Su código ha migrado de una versión anterior de Visual Basic que no reservó la palabra clave que está utilizando como nombre; o</li>
+                    <li>Está trabajando con código escrito en otro lenguaje en el que la palabra clave determinada no está reservada.</li>
+                </ul>
+                <p><span class="tituloSpan">Distinguir mayúsculas de minúsculas en los nombres</span></p>
+                <p> Los nombres de elementos en Visual Basic no distinguen entre mayúsculas y minúsculas. Es decir, cuando el compilador compara dos nombres cuya única diferencia está en letras mayúsculas o minúsculas, los interpreta como el mismo nombre. Por ejemplo, <span>ABC</span> y <span>abc</span> hacen referencia al mismo elemento declarado. </p>
+                <p><span class="tituloSpan mt-5">Declarar el tipo de datos</span></p>
+                <p> La cláusula As de la instrucción de declaración permite definir el tipo de datos o de objetos de la variable que se está declarando. Se puede especificar cualquiera de los siguientes tipos para una variable: </p>
+                <ul>
+                    <li>Un tipo de datos básico, como Boolean, Long o Decimal.</li>
+                    <li>Un tipo de datos compuesto, como una matriz o una estructura.</li>
+                    <li>Un tipo de objeto o clase, definido en su aplicación o en otra aplicación</li>
+                    <li>Clase de .NET Framework, como Label o TextBox</li>
+                    <li>Un tipo de interfaz, como IComparable o IDisposable</li>
+                </ul>
+                <pre>
+                <code data-language="vb">
+Dim i, j, k As Integer
+' All three variables in the preceding statement are declared as Integer.
+Dim l, m As Long, x, y As Single
+' In the preceding statement, l and m are Long, x and y are Single.
+                </code>
+                </pre>
+                <p><span class="tituloSpan">Tipo de datos</span></p>
+                <table class="table table-bordered table-hover table-striped">
+                    <thead>
+                        <th>Nombre</th>
+                        <th>Tipo</th>
+                        <th>Byte</th>
+                        <th>Rango de valores</th>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>boolean</td>
+                        <td>lógico</td>
+                        <td>1</td>
+                        <td>true o false</td>
+
+                    </tr>
+                    <tr>
+                        <td>char</td>
+                        <td>Carácter Simple</td>
+                        <td>2</td>
+                        <td>Un caracter</td>
+                    </tr>
+                    <tr>
+                        <td>byte</td>
+                        <td>Entero</td>
+                        <td>1</td>
+                        <td>-128 a 127</td>
+                    </tr>
+                    <tr>
+                        <td>short</td>
+                        <td>Entero</td>
+                        <td>2</td>
+                        <td>-32768 a 32767</td>
+                    </tr>
+                    <tr>
+                        <td>int</td>
+                        <td>Entero</td>
+                        <td>4</td>
+                        <td>-2.147.483.648 a 2.147.483.649</td>
+                    </tr>
+                    <tr>
+                        <td>long</td>
+                        <td>Entero</td>
+                        <td>8</td>
+                        <td>-9.223.372.036.854.775.808 a 9.223.372.036.854.775.808</td>
+                    </tr>
+                    <tr>
+                        <td>float</td>
+                        <td>Numérico con coma flotante</td>
+                        <td>4</td>
+                        <td> 34*10 <sup>-38</sup> a 34*10 <sup>38</sup></td>
+                    </tr>
+                    <tr>
+                        <td>double</td>
+                        <td>Númerico con coma flotante</td>
+                        <td>8</td>
+                        <td>1.8x10 <sup>-308</sup> a 1.8x10 <sup>308</sup></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <p>Ejemplo en Diferentes lenguajes</p>
+                <div class="ejemplo">
+                    <ul>
+                        <li><a href="#vb1">VB</a></li>
+                        <li><a href="#c1">C#</a></li>
+                        <li><a href="#php1">PHP</a></li>
+                    </ul>
+                    <div id="vb1">
+                        <pre>
+                            <code data-language="vb">
+Public Sub inferenceExample()
+
+    ' Using explicit typing.
+    Dim num1 As Integer = 3
+
+    ' Using local type inference.
+    Dim num2 = 3
+
+End Sub
+                            </code>
+                        </pre>
+                    </div>
+                    <div id="c1">
+                        <pre><code data-language="csharp">
+using System;
+class BoxingExample
+{
+    static void Main()
+    {
+        int i = 123;
+        object o = i;    // Boxing
+        int j = (int)o;  // Unboxing
+    }
+}
+                        </code>
+                        </pre>
+                    </div>
+                    <div id="php1">
+                        <p>En PHP las variables se representan con un signo de dólar seguido por el nombre de la variable. El nombre de la variable es sensible a minúsculas y mayúsculas. </p>
+                        <p> Los nombres de variables siguen las mismas reglas que otras etiquetas en PHP. Un nombre de variable válido tiene que empezar con una letra o un carácter de subrayado (underscore), seguido de cualquier número de letras, números y caracteres de subrayado. Como expresión regular se podría expresar como: '[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*' </p>
+                        <pre>
+                            <code data-language="php">
+
+<?php
+$var = 'Roberto';
+$Var = 'Juan';
+echo "$var, $Var";      // imprime "Roberto, Juan"
+
+$4site = 'aun no';      // inválido; comienza con un número
+$_4site = 'aun no';     // válido; comienza con un carácter de subrayado
+$täyte = 'mansikka';    // válido; 'ä' es ASCII (Extendido) 228
+?>
+
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+                <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+                <blockquote>
+                    <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                </blockquote>
+                <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+                <h2>Heading</h2>
+                <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                <h3>Sub-heading</h3>
+                <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                <pre><code>Example code block</code></pre>
+                <p>Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+                <h3>Sub-heading</h3>
+                <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                <ul>
+                    <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+                    <li>Donec id elit non mi porta gravida at eget metus.</li>
+                    <li>Nulla vitae elit libero, a pharetra augue.</li>
+                </ul>
+                <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
+                <ol>
+                    <li>Vestibulum id ligula porta felis euismod semper.</li>
+                    <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
+                    <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
+                </ol>
+                <p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
+            </div><!-- /.blog-post -->
+
+            <div class="blog-post">
+                <h2 class="blog-post-title">Another blog post</h2>
+                <p class="blog-post-meta">December 23, 2013 by <a href="#">Jacob</a></p>
+
+                <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+                <blockquote>
+                    <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                </blockquote>
+                <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+                <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+            </div><!-- /.blog-post -->
+
+            <div class="blog-post">
+                <h2 class="blog-post-title">New feature</h2>
+                <p class="blog-post-meta">December 14, 2013 by <a href="#">Chris</a></p>
+
+                <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                <ul>
+                    <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+                    <li>Donec id elit non mi porta gravida at eget metus.</li>
+                    <li>Nulla vitae elit libero, a pharetra augue.</li>
+                </ul>
+                <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+                <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
+            </div><!-- /.blog-post -->
+
+            <nav class="blog-pagination">
+                <a class="btn btn-outline-primary" href="#">Older</a>
+                <a class="btn btn-outline-secondary disabled" href="#">Newer</a>
             </nav>
-        </div>
-    </header>
 
-    <div class="content">
-        
-    </div>
+        </div><!-- /.blog-main -->
 
-    <footer>
-        <div class="left">
-            <p></p>
-        </div>
-        
-        <div class="right">
+        <aside class="col-md-4 blog-sidebar">
+            <div class="p-3 mb-3 bg-light rounded">
+                <h4 class="font-italic">About</h4>
+                <p class="mb-0">Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+            </div>
 
-        </div>
-    </footer>
+            <div class="p-3">
+                <h4 class="font-italic">Archives</h4>
+                <ol class="list-unstyled mb-0">
+                    <li><a href="#">March 2014</a></li>
+                    <li><a href="#">February 2014</a></li>
+                    <li><a href="#">January 2014</a></li>
+                    <li><a href="#">December 2013</a></li>
+                    <li><a href="#">November 2013</a></li>
+                    <li><a href="#">October 2013</a></li>
+                    <li><a href="#">September 2013</a></li>
+                    <li><a href="#">August 2013</a></li>
+                    <li><a href="#">July 2013</a></li>
+                    <li><a href="#">June 2013</a></li>
+                    <li><a href="#">May 2013</a></li>
+                    <li><a href="#">April 2013</a></li>
+                </ol>
+            </div>
+
+            <div class="p-3">
+                <h4 class="font-italic">Elsewhere</h4>
+                <ol class="list-unstyled">
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ol>
+            </div>
+        </aside><!-- /.blog-sidebar -->
+
+    </div><!-- /.row -->
+
+</main><!-- /.container -->
 </body>
+
+
+
+<script src="js/main.js"></script>
 </html>
