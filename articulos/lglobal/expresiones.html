@@ -6,27 +6,27 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- bootstrap -->
-    <link rel="stylesheet" href="recursos/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/recursos/bootstrap/css/bootstrap.css">
     <!-- end bootstrap -->
     <!-- icon -->
-    <link rel="stylesheet" href="recursos/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="/recursos/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css">
     <!-- end icon -->
     <!-- jquery -->
-    <link rel="stylesheet" href="recursos/jquery-ui-1.12.1/jquery-ui.css">
+    <link rel="stylesheet" href="/recursos/jquery-ui-1.12.1/jquery-ui.css">
     <!-- end jquery -->
 
-    <script src="recursos/jquery/jquery-3.2.1.js"></script>
-    <script src="recursos/jquery-ui-1.12.1/jquery-ui.js"></script>
-    <script src="recursos/bootstrap/js/bootstrap.js"></script>
-    <script src="recursos/rainbow-custom.min.js"></script>
-    <script src="recursos/rainbow.linenumbers.js-master/rainbow.linenumbers.min.js"></script>
-    <link rel="stylesheet" href="recursos/rainbow.linenumbers.js-master/tomorrow-night.css">
-    <link rel="stylesheet" href="recursos/rainbow.linenumbers.js-master/theme.css">
+    <script src="/recursos/jquery/jquery-3.2.1.js"></script>
+    <script src="/recursos/jquery-ui-1.12.1/jquery-ui.js"></script>
+    <script src="/recursos/bootstrap/js/bootstrap.js"></script>
+    <script src="/recursos/rainbow-custom.min.js"></script>
+    <script src="/recursos/rainbow.linenumbers.js-master/rainbow.linenumbers.min.js"></script>
+    <link rel="stylesheet" href="/recursos/rainbow.linenumbers.js-master/tomorrow-night.css">
+    <link rel="stylesheet" href="/recursos/rainbow.linenumbers.js-master/theme.css">
     <!-- normalize -->
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="/css/normalize.css">
     <!-- end normalize -->
     <!-- my css -->
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="/css/estilo.css">
     <!-- end my css -->
 
     <title>NetDawEs</title>
@@ -43,7 +43,7 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Inicio
+                        <a class="nav-link" href="/inicio.html">Inicio
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
@@ -330,77 +330,6 @@
                             </tr>
                         </tbody>
                     </table>
-                    <p>
-                        <span class="tituloSpan">Tipo de datos</span>
-                    </p>
-                    
-                    <p>Ejemplo en Diferentes lenguajes</p>
-                    <div class="ejemplo">
-                        <ul>
-                            <li>
-                                <a href="#vb1">VB</a>
-                            </li>
-                            <li>
-                                <a href="#c1">C#</a>
-                            </li>
-                            <li>
-                                <a href="#php1">PHP</a>
-                            </li>
-                        </ul>
-                        <div id="vb1">
-                            <pre>
-                            <code data-language="vb">
-Public Sub inferenceExample()
-
-    ' Using explicit typing.
-    Dim num1 As Integer = 3
-
-    ' Using local type inference.
-    Dim num2 = 3
-
-End Sub
-                            </code>
-                        </pre>
-                        </div>
-                        <div id="c1">
-                            <pre><code data-language="csharp">
-using System;
-class BoxingExample
-{
-    static void Main()
-    {
-        int i = 123;
-        object o = i;    // Boxing
-        int j = (int)o;  // Unboxing
-    }
-}
-                        </code>
-                        </pre>
-                        </div>
-                        <div id="php1">
-                            <p>En PHP las variables se representan con un signo de dólar seguido por el nombre de la variable.
-                                El nombre de la variable es sensible a minúsculas y mayúsculas. </p>
-                            <p> Los nombres de variables siguen las mismas reglas que otras etiquetas en PHP. Un nombre de variable
-                                válido tiene que empezar con una letra o un carácter de subrayado (underscore), seguido de
-                                cualquier número de letras, números y caracteres de subrayado. Como expresión regular se
-                                podría expresar como: '[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*' </p>
-                            <pre>
-                            <code data-language="php">
-
-<?php
-$var = 'Roberto';
-$Var = 'Juan';
-echo "$var, $Var";      // imprime "Roberto, Juan"
-
-$4site = 'aun no';      // inválido; comienza con un número
-$_4site = 'aun no';     // válido; comienza con un carácter de subrayado
-$täyte = 'mansikka';    // válido; 'ä' es ASCII (Extendido) 228
-?>
-
-                            </code>
-                        </pre>
-                        </div>
-                    </div>
     </main>
     <!-- /.container -->
 </body>
