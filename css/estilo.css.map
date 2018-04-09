@@ -1,7 +1,9 @@
 {
-"version": 3,
-"mappings": "AAGA;;QAEQ;EACN,UAAU,EAAE,UAAU;;AAExB,IAAI;EACF,UAAU,EAAE,GAAG;;AAEjB,WAAW;EACT,SAAS,EAAE,KAAK;EAChB,KAAK,EAXO,OAAO;EAYnB,WAAW,EAAE,IAAI;;AAEnB,IAAI;EACF,KAAK,EAhBa,OAAO",
-"sources": ["../scss/estilo.scss"],
-"names": [],
-"file": "estilo.css"
+    "version": 3,
+    "mappings": "AAGA,AAAA,CAAC;AACD,AAAA,OAAO;AACP,AAAA,QAAQ,CAAA;EACN,UAAU,EAAE,UAAU;CACvB;;AACD,AAAA,IAAI,CAAA;EACF,UAAU,EAAE,GAAG;CAChB;;AACD,AAAA,WAAW,CAAA;EACT,SAAS,EAAE,KAAK;EAChB,KAAK,EAXO,OAAO;EAYnB,WAAW,EAAE,IAAI;CAClB;;AACD,AAAA,IAAI,CAAA;EACF,KAAK,EAhBa,OAAO;CAiB1B",
+    "sources": [
+        "../scss/estilo.scss"
+    ],
+    "names": [],
+    "file": "estilo.css"
 }

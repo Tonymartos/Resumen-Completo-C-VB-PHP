@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="recursos/bootstrap/css/bootstrap.css">
+    <!-- end bootstrap -->
+    <!-- icon -->
+    <link rel="stylesheet" href="recursos/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css">
+    <!-- end icon -->
+    <!-- jquery -->
+    <link rel="stylesheet" href="recursos/jquery-ui-1.12.1/jquery-ui.css">
+    <!-- end jquery -->
+
+    <script src="recursos/jquery/jquery-3.2.1.js"></script>
+    <script src="recursos/jquery-ui-1.12.1/jquery-ui.js"></script>
+    <script src="recursos/bootstrap/js/bootstrap.js"></script>
+    <script src="recursos/rainbow-custom.min.js"></script>
+    <script src="recursos/rainbow.linenumbers.js-master/rainbow.linenumbers.min.js"></script>
+    <link rel="stylesheet" href="recursos/rainbow.linenumbers.js-master/tomorrow-night.css">
+    <link rel="stylesheet" href="recursos/rainbow.linenumbers.js-master/theme.css">
+    <!-- normalize -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- end normalize -->
+    <!-- my css -->
+    <link rel="stylesheet" href="css/estilo.css">
+    <!-- end my css -->
+
+    <title>NetDawEs</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="#">NetDawEs</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Inicio
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <!--<li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>-->
+                </ul>
+                <form class="form-inline mt-2 mt-md-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main role="main" class="container">
+        <div class="row">
+            <div class="col-md-8 blog-main">
+
+                <div class="blog-post">
+                    <h2 class="blog-post-title">Expresiones Visual Basic, C# y PHP</h2>
+                    <p class="blog-post-meta">Abril 9, 2018 by
+                        <a target="_blank" href="https://github.com/tonymartos">Tony Martos</a>
+                    </p>
+
+                    <p>Explicaremos que son las expresiones</p>
+                    <hr>
+                    <h2>Expresiones</h2>
+                    <p> Las expresiones se construyen a partir de operandos y operadores. Los operadores de una expresión indican qué operaciones
+                    se aplican a los operandos. Entre los ejemplos de operadores se incluyen +, -, *, / y new. Son ejemplos de operandos los
+                    literales, campos, variables locales y expresiones.</p>
+                    <p>Cuando una expresión contiene varios operadores, la prioridad de los operadores controla el orden de evaluación de los operadores
+                    individuales. Por ejemplo, la expresión x + y * z se evalúa como x + (y * z) porque el operador * tiene prioridad sobre +.
+                    La mayoría de los operadores se pueden sobrecargar. La sobrecarga de operadores permite utilizar implementaciones de operadores
+                    definidas por el usuario en operaciones en las que al menos uno de los operandos es de un tipo struct o clase definido por
+                    el usuario.
+                    </p>
+                    <p>En la tabla siguiente se resumen los operadores de C#, enumerando las categorías en orden de prioridad de mayor a menor:
+                    Los operadores de la misma categoría tienen la misma prioridad.</p>
+                    <table class="table table-bordered table-hover table-striped">
+                        <thead>
+                            <th>Categoría</th>
+                            <th>Expresión</th>
+                            <th>Descripción</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Principal</td>
+                                <td>x.m</td>
+                                <td>Acceso a miembros</td>
+                            </tr>
+                            <tr>
+                                <td>Principal</td>
+                                <td>x(...)</td>
+                                <td>Invocación de métodos y delegados</td>
+                            </tr>
+                            <tr>
+                                <td>Principal</td>
+                                <td>x[...]</td>
+                                <td>Matriz y acceso del indizador</td>
+                            </tr>
+                            <tr>
+                                <td>Principal</td>
+                                <td>x++</td>
+                                <td>Incremento posterior</td>
+                            </tr>
+                            <tr>
+                                <td>Principal</td>
+                                <td>x--</td>
+                                <td>Decremento posterior</td>
+                            </tr>
+                            <tr>
+                                <td>Principal</td>
+                                <td>new T(...)</td>
+                                <td>Creación de objetos y de delegados</td>
+                            </tr>
+                            <tr>
+                                <td>Principal</td>
+                                <td>new T(...){...}</td>
+                                <td>Creación de objeto con el inicializador</td>
+                            </tr>
+                            <tr>
+                                <td>Principal</td>
+                                <td>new {...}</td>
+                                <td>Inicializador de objeto anónimo</td>
+                            </tr>
+                            <tr>
+                                <td>Principal</td>
+                                <td>new T[...]</td>
+                                <td>Creación de matrices</td>
+                            </tr>
+                            <tr>
+                                <td>Principal</td>
+                                <td>typeof(T)</td>
+                                <td>Obtenga un objeto System.Type para T</td>
+                            </tr>
+                            <tr>
+                                <td>Principal</td>
+                                <td>checked(x)</td>
+                                <td>Evalúa la expresión en contexto comprobado</td>
+                            </tr>
+                            <tr>
+                                <td>Principal</td>
+                                <td>unchecked(x)</td>
+                                <td>Evalúa la expresión en contexto no comprobado</td>
+                            </tr>
+                            <tr>
+                                <td>Principal</td>
+                                <td>default(T)</td>
+                                <td>Obtiene el valor predeterminado del tipo T</td>
+                            </tr>
+                            <tr>
+                                <td>Principal</td>
+                                <td>delegate {...}</td>
+                                <td>Función anónima (método anónimo)</td>
+                            </tr>
+                            <tr>
+                                <td>Unario</td>
+                                <td>+x</td>
+                                <td>Identidad</td>
+                            </tr>
+                            <tr>
+                                <td>Unario</td>
+                                <td>-x</td>
+                                <td>Negación</td>
+                            </tr>
+                            <tr>
+                                <td>Unario</td>
+                                <td>!x</td>
+                                <td>Negación lógica</td>
+                            </tr>
+                            <tr>
+                                <td>Unario</td>
+                                <td>~x</td>
+                                <td>Negación bit a bit</td>
+                            </tr>
+                            <tr>
+                                <td>Unario</td>
+                                <td>++x</td>
+                                <td>Incremento previo</td>
+                            </tr>
+                            <tr>
+                                <td>Unario</td>
+                                <td>--x</td>
+                                <td>Decremento previo</td>
+                            </tr>
+                            <tr>
+                                <td>Unario</td>
+                                <td>(T)x</td>
+                                <td>Convierte explícitamente x en el tipo T</td>
+                            </tr>
+                            <tr>
+                                <td>Unario</td>
+                                <td>await x</td>
+                                <td>Espere asincrónicamente a que x se complete</td>
+                            </tr>
+                            <tr>
+                                <td>Multiplicativo</td>
+                                <td>x * y</td>
+                                <td>Multiplicación</td>
+                            </tr>
+                            <tr>
+                                <td>Multiplicativo</td>
+                                <td>x / y</td>
+                                <td>División</td>
+                            </tr>  
+                            <tr>
+                                <td>Multiplicativo</td>
+                                <td>x % y</td>
+                                <td>Resto</td>
+                            </tr>
+                            <tr>
+                                <td>Sumatorio</td>
+                                <td>x + y</td>
+                                <td>Suma, concatenación de cadenas, combinación de delegados</td>
+                            </tr>
+                            <tr>
+                                <td>Sumatorio</td>
+                                <td>x – y</td>
+                                <td>Resta, eliminación de delegados</td>
+                            </tr>
+                            <tr>
+                                <td>Desplazamiento</td>
+                                <td>x << y</td>
+                                <td>Desplazamiento a la izquierda</td>
+                            </tr>
+                            <tr>
+                                <td>Desplazamiento</td>
+                                <td>x >> y</td>
+                                <td>Desplazamiento a la derecha</td>
+                            </tr>
+                            <tr>
+                                <td>Comprobación de tipos y relacionales</td>
+                                <td>x < y</td>
+                                <td>Menor que</td>
+                            </tr>
+                            <tr>
+                                <td>Comprobación de tipos y relacionales</td>
+                                <td>x > y</td>
+                                <td>Mayor que</td>
+                            </tr>
+                            <tr>
+                                <td>Comprobación de tipos y relacionales</td>
+                                <td>x <=y</td>
+                                <td>Menor o igual que</td>
+                            </tr>
+                            <tr>
+                                <td>Comprobación de tipos y relacionales</td>
+                                <td>x >= y</td>
+                                <td>Mayor o igual que</td>
+                            </tr>
+                            <tr>
+                                <td>Comprobación de tipos y relacionales</td>
+                                <td>x is T</td>
+                                <td>Devuelva true si x es T; de lo contrario, false</td>
+                            </tr>
+                            <tr>
+                                <td>Comprobación de tipos y relacionales</td>
+                                <td>x as T</td>
+                                <td>Devuelva x con tipo como T, o null si x no es T</td>
+                            </tr>
+                            <tr>
+                                <td>Igualdad</td>
+                                <td>x == y</td>
+                                <td>Igual</td>
+                            </tr>
+                            <tr>
+                                <td>Igualdad</td>
+                                <td>x != y</td>
+                                <td>No igual</td>
+                            </tr>
+                            <tr>
+                                <td>AND lógico</td>
+                                <td>x % y</td>
+                                <td>Resto</td>
+                            </tr>
+                            <tr>
+                                <td>XOR lógico</td>
+                                <td>x % y</td>
+                                <td>Resto</td>
+                            </tr>
+                            <tr>
+                                <td>OR lógico</td>
+                                <td>x | y</td>
+                                <td>OR bit a bit entero, OR lógico booleano</td>
+                            </tr>
+                            <tr>
+                                <td>AND condicional</td>
+                                <td>x && y</td>
+                                <td>Evalúa y solo si x es true</td>
+                            </tr>
+                            <tr>
+                                <td>OR condicional</td>
+                                <td>x || y</td>
+                                <td>Evalúa y solo si x es false</td>
+                            </tr>
+                            <tr>
+                                <td>Uso combinado de Null</td>
+                                <td>X ?? y</td>
+                                <td>Se evalúa como y si x es null; de lo contrario, se evalúa como x</td>
+                            </tr>
+                            <tr>
+                                <td>Condicional</td>
+                                <td>x ? y : z</td>
+                                <td>Evalúa y si x es true, z si x es false</td>
+                            </tr>
+                            <tr>
+                                <td>Asignación o función anónima</td>
+                                <td>x = y</td>
+                                <td>Asignación</td>
+                            </tr>
+                            <tr>
+                                <td>Asignación o función anónima</td>
+                                <td>x op= y</td>
+                                <td>Asignación compuesta; los operadores compatibles son *= /= %= += -=
+                                <<=>>= &= ^= |=</td>
+                            </tr>
+                            <tr>
+                                <td>Asignación o función anónima</td>
+                                <td>(T x) => y</td>
+                                <td>Función anónima (expresión lambda)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>
+                        <span class="tituloSpan">Tipo de datos</span>
+                    </p>
+                    
+                    <p>Ejemplo en Diferentes lenguajes</p>
+                    <div class="ejemplo">
+                        <ul>
+                            <li>
+                                <a href="#vb1">VB</a>
+                            </li>
+                            <li>
+                                <a href="#c1">C#</a>
+                            </li>
+                            <li>
+                                <a href="#php1">PHP</a>
+                            </li>
+                        </ul>
+                        <div id="vb1">
+                            <pre>
+                            <code data-language="vb">
+Public Sub inferenceExample()
+
+    ' Using explicit typing.
+    Dim num1 As Integer = 3
+
+    ' Using local type inference.
+    Dim num2 = 3
+
+End Sub
+                            </code>
+                        </pre>
+                        </div>
+                        <div id="c1">
+                            <pre><code data-language="csharp">
+using System;
+class BoxingExample
+{
+    static void Main()
+    {
+        int i = 123;
+        object o = i;    // Boxing
+        int j = (int)o;  // Unboxing
+    }
+}
+                        </code>
+                        </pre>
+                        </div>
+                        <div id="php1">
+                            <p>En PHP las variables se representan con un signo de dólar seguido por el nombre de la variable.
+                                El nombre de la variable es sensible a minúsculas y mayúsculas. </p>
+                            <p> Los nombres de variables siguen las mismas reglas que otras etiquetas en PHP. Un nombre de variable
+                                válido tiene que empezar con una letra o un carácter de subrayado (underscore), seguido de
+                                cualquier número de letras, números y caracteres de subrayado. Como expresión regular se
+                                podría expresar como: '[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*' </p>
+                            <pre>
+                            <code data-language="php">
+
+<?php
+$var = 'Roberto';
+$Var = 'Juan';
+echo "$var, $Var";      // imprime "Roberto, Juan"
+
+$4site = 'aun no';      // inválido; comienza con un número
+$_4site = 'aun no';     // válido; comienza con un carácter de subrayado
+$täyte = 'mansikka';    // válido; 'ä' es ASCII (Extendido) 228
+?>
+
+                            </code>
+                        </pre>
+                        </div>
+                    </div>
+    </main>
+    <!-- /.container -->
+</body>
+
+
+
+<script src="js/main.js"></script>
+
+</html>

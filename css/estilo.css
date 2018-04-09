@@ -1,17 +1,20 @@
 *,
 ::after,
 ::before {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 main {
-  margin-top: 5em; }
+  margin-top: 5em;
+}
 
 .tituloSpan {
   font-size: 1.2em;
   color: #000000;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 span {
-  color: #006400; }
-
+  color: #006400;
+}
 /*# sourceMappingURL=estilo.css.map */
